@@ -5,7 +5,7 @@ variable "prefix" {
   default = "tfvmex"
 }
 module "network" {
-    source              = "https://github.com/Manas93/terraform-enterprise.git"
+    source              = "../../modules/network"
     prefix = "${var.prefix}"
   }
 
